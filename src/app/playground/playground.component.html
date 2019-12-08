@@ -12,6 +12,20 @@
   I have written this code for demonstration, 
   will refactor it in the next branch - Vivek
 -->
+
+<!-- 
+  Also, note these restrictions imposed in any expression scope such as
+  value, property, and event
+  
+  1.  Assignments (=, +=, -=, ...)
+  2.  Operators such as new, typeof, instanceof, etc.
+  3.  Chaining expressions with ; or ,
+  4.  The increment and decrement operators ++ and --
+  5.  Some of the ES2015+ operators
+  6.  Bitwise operators such as | and & (not error, but no support)
+
+  (Taken from documentation: https://angular.io/guide/template-syntax)
+ -->
 <button
   class="btn btn-primary"
   (click)="customEvent.emit({ message: 'Emitting from child at button click' })"
