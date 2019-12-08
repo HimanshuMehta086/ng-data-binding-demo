@@ -2,19 +2,19 @@
 
 <p>Title: {{ title | titlecase }}</p>
 <hr />
-<p>Today: {{ today | date }}</p>
+<p>Today: {{ today | date: 'dd-MM-yyyy' }}</p>
 <hr />
-<p>Price: {{ price | currency }}</p>
+<p>Price: {{ price | currency: 'INR' }}</p>
 <hr />
-<p>Rate of Growth: {{ rateOfGrowth | percent }}</p>
+<p>Rate of Growth: {{ rateOfGrowth | percent: '2.2-2' }}</p>
 <hr />
 <p>Status: {{ status ? 'Yes' : 'No' }}</p>
 <hr />
-<p>Pi: {{ pi | number }}</p>
+<p>Pi: {{ pi | number: '1.4' }}</p>
 <hr />
 <p>Method: {{ foo() | uppercase }}</p>
 <hr />
 <p>
   Expression evaluation:
-  {{ (132 + (14 - 3) * 4) / (42 - 13) | number }}
+  {{ (132 + (14 - 3) * 4) / (42 - 13) | number: '2.3-3' }}
 </p>
