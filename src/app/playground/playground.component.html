@@ -1,15 +1,20 @@
-<p>Title: {{ title }}</p>
+<!-- More information here: https://angular.io/api?type=pipe -->
+
+<p>Title: {{ title | titlecase }}</p>
 <hr />
-<p>Today: {{ today }}</p>
+<p>Today: {{ today | date }}</p>
 <hr />
-<p>Price: {{ price }}</p>
+<p>Price: {{ price | currency }}</p>
 <hr />
-<p>Rate of Growth: {{ rateOfGrowth }}</p>
+<p>Rate of Growth: {{ rateOfGrowth | percent }}</p>
 <hr />
 <p>Status: {{ status ? 'Yes' : 'No' }}</p>
 <hr />
-<p>Pi: {{ pi }}</p>
+<p>Pi: {{ pi | number }}</p>
 <hr />
-<p>Method: {{ foo() }}</p>
+<p>Method: {{ foo() | uppercase }}</p>
 <hr />
-<p>Expression evaluation: {{ (132 + (14 - 3) * 4) / (42 - 13) }}</p>
+<p>
+  Expression evaluation:
+  {{ (132 + (14 - 3) * 4) / (42 - 13) | number }}
+</p>
