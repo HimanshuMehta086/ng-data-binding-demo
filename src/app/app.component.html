@@ -2,13 +2,20 @@
 
 <div class="container">
   <!-- 
-  property binding provides the scope for expression
-  "title" here is an expression which evaluates 
-  to the field declared in the AppComponent.
-  For literal strings, use inner quotes such as "'This is a title'".
-  Providing a non existent field is not an error as syntax passes undefined.
-  Passing a literal string (without inner quotes) in the expression scope 
-  is an error as the runtime tries to evaluate the expression by tokenizing
-  -->
+  1.  property binding provides the scope for expression
+      "title" here is an expression which evaluates 
+      to the field declared in the AppComponent.
+
+  2.  For literal strings, use inner quotes such as "'This is a title'".
+  
+  3.  Providing a non existent field is not an error as syntax passes undefined.
+  
+  4.  Passing a literal string (without inner quotes) in the expression scope 
+      is an error as the runtime tries to evaluate the expression by tokenizing
+  
+  5.  If the property-bound field changes in the parent, the resultant binding
+      in the child will also change. 
+      This is same as change effect in DOM property binding.
+    -->
   <app-playground [title]="title"></app-playground>
 </div>
