@@ -1,1 +1,11 @@
-<p>playground works!</p>
+<h2>Two-way data binding demo</h2>
+
+<hr />
+<h3>{{ title }}</h3>
+
+<input
+  type="text"
+  class="form-control"
+  (input)="inputHandler($event)"
+  [value]="title"
+/>
