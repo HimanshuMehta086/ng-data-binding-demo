@@ -4,7 +4,8 @@
 <hr />
 <p>Today: {{ today | date: 'dd-MM-yyyy' }}</p>
 <hr />
-<p>Price: {{ price | currency: 'INR' }}</p>
+<!-- using custom pipe here -->
+<p>Price: {{ price | currencyClone: 'INR':'1' }}</p>
 <hr />
 <p>Rate of Growth: {{ rateOfGrowth | percent: '2.2-2' }}</p>
 <hr />
