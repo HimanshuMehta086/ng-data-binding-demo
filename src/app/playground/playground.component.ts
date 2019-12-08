@@ -19,7 +19,8 @@ export class PlaygroundComponent implements OnInit {
   //  Parent hooks (by providing the handler) to this event
   //  in the same way a standard DOM event is hooked
   //  It is possible to alias this customEvent field as @Output('alias')
-  //  This practice is discouraged and warned
+  //  This practice is discouraged and Angular linting warns
+  //  Please refer to Angular Styleguide: https://angular.io/guide/styleguide#decorate-input-and-output-properties
 
   //  Please note, this is step 1
   @Output() customEvent = new EventEmitter();
