@@ -9,7 +9,12 @@ export class PlaygroundComponent implements OnInit {
   title = 'Hello There!';
   cssClass = 'font-weight-bold';
 
-  constructor() {}
+  constructor() {
+    setTimeout(() => {
+      this.cssClass = 'font-italic';
+      this.title = 'Now the title is changed';
+    }, 5000);
+  }
 
   ngOnInit() {}
 }
