@@ -1,1 +1,20 @@
 <h2>Custom event binding demo</h2>
+
+<hr />
+<!-- 
+  This approach is not an idiomatic one. Because: 
+  1.  Any expression scope in the template forbids assignment, mutation, 
+      and creation (use of = or new keyword is forbidden in templates)
+  2.  Complex event args may not be constructed in the template for reason 1
+  3.  Even if reason 1 is no applicable, writing long logical blocks 
+      in the template goes against the separation of concerns principle
+
+  I have written this code for demonstration, 
+  will refactor it in the next branch - Vivek
+-->
+<button
+  class="btn btn-primary"
+  (click)="customEvent.emit({ message: 'Emitting from child at button click' })"
+>
+  Emit Custom Event
+</button>
