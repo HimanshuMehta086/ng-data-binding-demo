@@ -1,5 +1,14 @@
 <app-navbar></app-navbar>
 
 <div class="container">
-  <app-playground></app-playground>
+  <!-- 
+  property binding provides the scope for expression
+  "title" here is an expression which evaluates 
+  to the field declared in the AppComponent.
+  For literal strings, use inner quotes such as "'This is a title'".
+  Providing a non existent field is not an error as syntax passes undefined.
+  Passing a literal string (without inner quotes) in the expression scope 
+  is an error as the runtime tries to evaluate the expression by tokenizing
+  -->
+  <app-playground [title]="title"></app-playground>
 </div>
