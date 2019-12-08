@@ -1,5 +1,5 @@
 <h2>DOM event binding</h2>
 
 <hr />
-<!-- More information on standard DOM events: https://developer.mozilla.org/en-US/docs/Web/Events -->
-<button class="btn btn-primary" (click)="handler()">Click Here!</button>
+<!-- For every event, Angular provides the event object as $event -->
+<button class="btn btn-primary" (click)="handler($event)">Click Here!</button>

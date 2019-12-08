@@ -10,7 +10,8 @@ export class PlaygroundComponent implements OnInit {
 
   ngOnInit() {}
 
-  handler() {
-    console.log('Button click handled');
+  //  Angular event object $event can be received with any name
+  handler(args) {
+    console.log('Button click handled', args);
   }
 }
