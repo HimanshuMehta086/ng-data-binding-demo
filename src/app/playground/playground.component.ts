@@ -13,6 +13,6 @@ export class PlaygroundComponent implements OnInit {
   ngOnInit() {}
 
   inputHandler(args) {
-    console.log(args);
+    this.title = args.target.value;
   }
 }
