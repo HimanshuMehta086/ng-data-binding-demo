@@ -11,7 +11,7 @@ export class PlaygroundComponent implements OnInit {
   //  We expect parent component to provide the value for these fields
 
   //  It is possible to alias the title using @Input('alias')
-  //  This is discouraged and Angular runtime warns
+  //  This is discouraged and Angular linting warns
   //  Please refer to Angular Styleguide: https://angular.io/guide/styleguide#decorate-input-and-output-properties
   @Input() title: string;
 
