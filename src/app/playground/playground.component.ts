@@ -27,4 +27,8 @@ export class PlaygroundComponent implements OnInit {
     //  always a good idea to type-annotate
     return 3.14159265359; //  a getter has to return
   }
+
+  foo() {
+    return 'returning from a method';
+  }
 }
